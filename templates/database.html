@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <table>
+        <tr>
+            <th>navn</th>
+            <th>tlf</th>
+            <th>status</th>
+        </tr>
+
+        {% for f in folk %}
+        <tr>
+            <td>{{ f[1] }}</td>
+            <td>{{ f[2] }}</td>
+            <td>{{ f[3] }}</td>
+        </tr>
+
+        {% endfor %}
+
+    </table>
+
+    <h3>more people?</h3>
+
+    <form action="POST">
+
+        <input type="text" name="name" placeholder="name..">
+        <input type="text" name="tlf" placeholder="phone number....">
+        <input type="text" name="rolle" placeholder="status...">
+        <br>
+        <input type="submit" name="submit">
+        
+    </form>
+
+
+
+</body>
+
+</html>

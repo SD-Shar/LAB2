@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <ul>
+        {% for e in elever %}
+
+        <li>{{ e }}</li>
+
+        {% endfor %}
+    </ul>
+
+    <ul>
+        {% if eleverLen < 10 %}
+
+            <li>{{eleverLen}}</li>
+
+        {% endif %}
+    </ul>
+    
+</body>
+</html>
